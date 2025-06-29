@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil – SaveMoney</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- 🟢 Élément 1 : Burger Menu -->
+  <header class="header">
+  <div class="menu-top">
+    <button id="burger-menu">☰</button>
+  </div>
+</header>
+
+  <!-- 🟢 Élément 2 : Sidebar -->
+   <aside id="sidebar" class="sidebar">
+  <!-- 🟢 Bloc profil utilisateur en haut -->
+<a href="profil.html" class="profil-widget">
+  <img src="default-avatar.png" alt="Photo de profil" class="avatar">
+  <div class="infos-utilisateur">
+    <h2>Huseyin</h2>
+    <p> Total : <strong>8 284 €</strong></p>
+  </div>
+</a>
+
+  <!-- 🔹 Séparation visuelle -->
+  <hr class="separator">
+
+  <!-- 🔹 Menu navigation avec icônes -->
+  <nav class="sidebar-nav">
+    <ul>
+      <li><a href="#"><span class="icon">🏠</span> Accueil</a></li>
+      <li><a href="#"><span class="icon">💳</span> Comptes</a></li>
+      <li><a href="#"><span class="icon">📂</span> Catégories</a></li>
+      <li><a href="#"><span class="icon">⚙️</span> Paramètres</a></li>
+    </ul>
+  </nav>
+</aside>
+
+  <!-- 🟢 Élément 2 : Sidebar -->
+<aside id="sidebar" class="sidebar">
+  <nav>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Catégories</a></li>
+      <li><a href="#">Paramètres</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<!-- 🟢 Élément 3 : Overlay (fond assombri quand la sidebar est ouverte) -->
+<div id="overlay" class="hidden"></div>
+
+
+  <!-- 🟢 Script JS tout à la fin -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
