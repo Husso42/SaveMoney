@@ -41,4 +41,15 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.overflow = "auto";
     }
   });
+  
+  // 🔹 Mise à jour du profil utilisateur avec les données de data.js
+  const nomElement = document.querySelector(".infos-utilisateur h2");
+  const totalElement = document.querySelector(".infos-utilisateur p strong");
+  const avatarElement = document.querySelector(".avatar");
+
+  if (typeof userData !== "undefined") {
+    nomElement.textContent = userData.nom;
+    totalElement.textContent = userData.total;
+    avatarElement.src = userData.avatar;
+  }
 });
